@@ -13,7 +13,7 @@
                                 <h3 class="text-center">Juice Order Form</h3>
                                 <div class="col-md-12">
                                     <label for="juicename">Juice Name</label>
-                                    <input class="form-control @error('juicename') is-invalid @enderror" type="text" name="juicename"  value="{{ $product->juicename }}" required>
+                                    <input class="form-control @error('juicename') is-invalid @enderror" type="text" name="juicename"  value="{{ old('$product->juicename') }}" required>
                                     @error('juicename')
                                     <div class="text-danger">{{ $message }}</div>
                                     @enderror

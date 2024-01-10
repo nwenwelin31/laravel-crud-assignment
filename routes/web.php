@@ -21,8 +21,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 //Route::resource('product', ProductController::class);
-//Route::post('/products', ProductController::class .'@store')->name('products.index');
 
+
+//custom
 Route::get('/product', [ProductController::class,'index'])->name('product.index');
 Route::get('/product/create', [ProductController::class,'create'])->name('product.create');
 Route::post('/product/store', [ProductController::class,'store'])->name('product.store');

@@ -6,6 +6,10 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-body shadow">
+                    <div>
+                        <a href="{{ route('product.create') }}" class="btn btn-dark">Create</a>
+                    </div>
+
                     <table class="table">
                         <thead>
                             <h1>Order List</h1>

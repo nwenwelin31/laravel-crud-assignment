@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->string("juicename");
             $table->integer("quantity");
             $table->string("customername");
-            $table->integer("phoneNumber");
+            $table->string("phoneNumber");
             $table->string("address");
             $table->timestamps();
         });

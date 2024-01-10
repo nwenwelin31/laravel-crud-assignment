@@ -47,7 +47,7 @@
                                     @enderror
                                 </div>
                                 <div class="form-button mt-3">
-                                    <button type="submit" class="btn btn-primary">Update</button>
+                                    <button type="submit" class="btn btn-dark">Update</button>
                                 </div>
                             </div>
                         </form>

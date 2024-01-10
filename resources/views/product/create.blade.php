@@ -12,35 +12,35 @@
                                 <h3 class="text-center">Juice Order Form</h3>
                                 <div class="col-md-12">
                                     <label for="juicename">Juice Name</label>
-                                    <input class="form-control" type="text" name="juicename" required>
+                                    <input class="form-control" value="{{ old('juicename') }}" type="text" name="juicename" required>
                                     @error('juicename')
                                     <div class="text-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
                                 <div class="col-md-12">
                                     <label for="quantity">Quantity</label>
-                                    <input class="form-control" type="text" name="quantity" required>
+                                    <input class="form-control" value="{{ old('quantity') }}" type="text" name="quantity" required>
                                     @error('quantity')
                                     <div class="text-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
                                 <div class="col-md-12">
                                     <label for="customername">Customer Name</label>
-                                    <input class="form-control" type="text" name="customername" required>
+                                    <input class="form-control" value="{{ old('customername') }}" type="text" name="customername" required>
                                     @error('customername')
                                     <div class="text-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
                                 <div class="col-md-12">
                                     <label for="phoneNumber">Phone Number</label>
-                                    <input class="form-control" type="text" name="phoneNumber" placeholder="******" required>
+                                    <input class="form-control" value="{{ old('phoneNumber') }}" type="text" name="phoneNumber" placeholder="******" required>
                                     @error('phoneNumber')
                                     <div class="text-danger">{{ $message }}</div>
                                     @enderror
                                 </div>
                                 <div class="col-md-12">
                                     <label for="address">Address</label>
-                                    <input class="form-control" type="text" name="address" placeholder="Address" required>
+                                    <input class="form-control" value="{{ old('address') }}" type="text" name="address" placeholder="Address" required>
                                     @error('address')
                                     <div class="text-danger">{{ $message }}</div>
                                     @enderror
